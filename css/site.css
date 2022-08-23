@@ -1,0 +1,91 @@
+html {
+    font-size: 14px;
+    position: relative;
+    min-height: 100%;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px; /* Vertically center the text there */
+}
+
+#walletList {
+    justify-content: space-between;
+}
+
+.card-body div p {
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.wallet {
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 2rem;
+}
+
+.wallet.card .row img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wallet.idramp .row {
+    background-color: #ffffff;
+}
+
+.wallet.idramp .row img {
+    display: block;
+    padding-top: 65px;
+    width: 80%;
+    height: auto;
+    max-height: 153px;
+}
+
+.wallet.esatus .row {
+    background-color: #003E93;
+}
+
+.wallet.lissi .row {
+    background-color: #111729;
+    height: 180px;
+}
+
+.wallet.trinsic .row {
+    background-color: #ffffff;
+}
+
+.wallet.trinsic .row img {
+    max-height: 180px;
+    width: 80%;
+    padding-top: 47px;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+    .wallet.idramp .row img {
+        max-height: 140px;
+    }
+
+    .wallet.trinsic .row img {
+        max-height: 140px;
+        width: 80%;
+        padding-top: 47px;
+    }
+
+    .wallet.lissi .row img {
+        max-height: 180px;
+    }
+}
